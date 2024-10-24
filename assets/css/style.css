@@ -29,7 +29,8 @@ h4{
 h5{
     font-size: 1rem;
     font-weight: 400;
-    color:rgb(250, 250, 250);
+    /* color:rgb(250, 250, 250); */
+    color: black;
 }
 h6{
     color: #D8D8D8;
@@ -95,4 +96,111 @@ button:hover{
 p{
     color:rgb(0, 0, 0);
     font-weight: bold;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#new .one{
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(255, 68, 0);
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.6;
+    background-color: rgb(1,1,1);
+    width: 100%;
+    height: 100%;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+}#new .one:nth-child(3) .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align:end;
+    justify-content:center;
+}
+#new .one .details:hover{
+    background-color: rgb(209, 255, 255);
+}
+/* PRODUCT */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product img{
+    height:70%;
+    width:70%;
+}
+.star{
+    padding:6px 0px;
+}
+.star i{
+    font-size: 0.9rem;
+    color:goldenrod
+}
+/* BANNER */
+#banner{
+    background-image: url(../imgs/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner button{
+    background-color: rgb(255, 68, 0);
+
+}
+#banner button:hover{
+    background-color: black;
+  
+}
+hr{
+width:30px;
+height:3px;
+opacity: 1;
+background-color: rgb(255, 68, 0);
+}
+.product .buy-btn{
+background-color: rgb(255, 68, 0);
+transform: translateY(50px); 
+/* move it to down 50 px */
+opacity: 0; 
+/* to hide this button when placing 50 px down */
+transition: 0.3s all;
+/* for smooth effect */
+}
+.product:hover .buy-btn{
+    transform:translateY(0px);
+    /* 0px sets backs to its original position back slowly  */
+    opacity: 1;
 }
